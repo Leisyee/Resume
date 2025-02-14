@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Resume">
+  <title>Aban Lei Andrew A - Resume</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Section */
+    header { 
+      background-color: #1e242b;
+      color: white;
+      padding: 50px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    /* 2x2 image grid in the header */
+    header .images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-right: 20px; 
+    }
+
+    header .images img {
+      width: 100%;
+      height: auto;
+      max-width: 250px; /* Adjust size of images */
+      nav-right: 25px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header .role {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    header .contact-info a {
+      color: #f9f9f9;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+
+    header .contact-info a:hover {
+      color: #ffffff;
+    }
+
+    header .contact-info {
+      margin-top: 15px;
+    }
+
+    /* About Me Section */
+    #about {
+      background-color: #ffffff;
+      padding: 40px 0;
+    }
+
+    #about h2 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2d3e50;
+    }
+
+    #about p {
+      text-align: center;
+      font-size: 1.2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Experience Section */
+    #experience {
+      background-color: #f9f9f9;
+      padding: 40px 0;
+      text-align: center; /* Center all content within the experience section */
+    }
+
+    #experience h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2d3e50;
+    }
+
+    .job {
+      margin-bottom: 40px;
+    }
+
+    .job h3 {
+      font-size: 1.8em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .job p {
+      font-size: 1.1em;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .job ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .job ul li {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    /* Education Section */
+    #education {
+      background-color: #ffffff;
+      padding: 40px 0;
+    }
+
+    #education h2 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2d3e50;
+    }
+
+    .education-item {
+      margin-bottom: 30px;
+    }
+
+    .education-item h3 {
+      font-size: 1.8em;
+      color: #000000;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+
+    .education-item p {
+      font-size: 1.1em;
+      color: #000000;
+      text-align: center;
+    }
+  
+
+    /* Skills Section */
+    #skills {
+      background-color: #f9f9f9;
+      padding: 40px 0;
+    }
+
+    #skills h2 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2d3e50;
+    }
+
+    #skills ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    #skills ul li {
+      font-size: 1.2em;
+      color: #1d1d1d;
+      margin-bottom: 10px;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #000000;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1.2em;
+    }
+
+    /* Footer Logos Styling */
+    .footer-logos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 10px;
+    }
+
+    .footer-logo {
+      max-width: 300px;
+      height: auto;
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      header .role {
+        font-size: 1.2em;
+      }
+
+      header .contact-info a {
+        font-size: 1em;
+      }
+
+      #about p {
+        font-size: 1em;
+      }
+
+      #experience h2, #education h2, #skills h2 {
+        font-size: 2em;
+      }
+
+      .job h3, .education-item h3 {
+        font-size: 1.5em;
+      }
+
+      #skills ul li {
+        font-size: 1.1em;
+      }
+
+      .footer-logos {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .footer-logo {
+        max-width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="images">
+      <img src="Lei.jpg" alt="Image 1">
+    </div>
+    <div class="container">
+      <h1>Aban Lei Andrew A</h1>
+      <p class="role">Web Developer | Programmer | Designer | Photographer | NCII Certificate </p>
+      <div class="09620454535">
+        <a href="mailto:leiaban8@gmail.com">leiaban8@gmail.com</a> |
+        <a href="https://github.com/Leisyyi" target="Leisyyi">GitHub</a> |
+        <a href="https://www.linkedin.com/in/Leisyyi" target="Leisyyi">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Personal Information Section -->
+  <section id="about">
+    <div class="container">
+      <h2>Personal Information</h2>
+      <p>
+        Age: 17 Years Old
+      </p> 
+      <p>
+        Birthdate: July 07 2007
+      </p>
+      <p>
+        Address: Blk 19 cambridge Village san Andres Cainta Rizal, Cluster 27 3L Two Berkeley
+      </p>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer with experience in both front-end and back-end technologies. I enjoy problem-solving and creating efficient solutions. With a strong foundation in web technologies, I am always eager to learn and improve my skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <h3>Facial Recognition Application Website Developer</h3>
+        <p><strong>November 2024 - Present</strong></p>
+        <ul>
+          <li>Developed and maintained websites using HTML, CSS, and JavaScript.</li>
+          <li>Collaborated with the design team to ensure visually appealing UI/UX.</li>
+          <li>Optimized web applications for better performance and mobile responsiveness.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Photographer And Videographer (freelance)</h3>
+        <p><strong>2021 - Present</strong></p>
+        <ul>
+          <li>Wedding Photographer and Event Coverage.</li>
+          <li>Owner of Photography and Videography Business.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>National University</h3>
+        <p><strong>Graduate of Bachelor of Science in Computer Science</strong> - 2028 - 2029</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>React, Node.js, Express</li>
+        <li>Git, GitHub, Version Control</li>
+        <li>NCII Holder</li>
+        <li>Database Management (SQL, MongoDB)</li>
+        <li>Figma, Adobe Photoshop</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-logos">
+        <img src="logo1.png" alt="Logo 1" class="footer-logo">
+        <img src="logo2.png" alt="Logo 2" class="footer-logo">
+        <img src="logo3.png" alt="Logo 2" class="footer-logo">
+      </div>
+      <p>© 2025 LBAC CO. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
